@@ -34,7 +34,7 @@ The application is a test project for DeciML System. Components are not responsi
 
 ##### The general page breakdown looks like this: #####
 
-* Index (URL: /#/dashboard) - the list of current forecasts
+* Dashboard (URL: /#/dashboard) - the list of current forecasts
 
 ### Deployment ###
 

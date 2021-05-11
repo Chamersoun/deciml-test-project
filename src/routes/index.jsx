@@ -8,7 +8,12 @@ import "../style/main.scss";
 
 export default (
     <>
-        <header className="header">DeciML System</header>
+        <header
+            className="header"
+            onClick={() => document.location.pathname !== "/dashboard" && document.location.replace("/dashboard")}
+        >
+            DeciML System
+        </header>
         <Switch>
             <Route path="/" exact render={() => <Redirect to="/dashboard" />} />
             <Route path="/dashboard" component={Dashboard} />
