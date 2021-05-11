@@ -1,0 +1,119 @@
+.dashboard_wrapper {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column;
+  width: 100%;
+  padding: 48px 64px;
+  .title {
+    font-size: 28px;
+    font-family: "MontMedium", sans-serif;
+    margin-bottom: 28px;
+  }
+  .forecasts_container {
+    display: flex;
+    overflow: auto;
+    .forecasts, .forecast_details_wrapper {
+      width: 48%;
+      min-width: 560px;
+    }
+    .forecasts {
+      margin-right: 4%;
+    }
+  }
+  .forecast {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 44px;
+    transition: 0.2s linear all;
+    cursor: pointer;
+    user-select: none;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+    .name_block {
+      font-family: "MontMedium", sans-serif;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #76A5AF;
+      color: #FFFFFF;
+      padding: 14px 64px;
+      line-height: 32px;
+    }
+    .condition_block {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 64px;
+      text-align: center;
+      line-height: 32px;
+      background-color: #EEEEEE;
+    }
+  }
+  .forecast_details_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .choose_forecast {
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #EEEEEE;
+      box-sizing: border-box;
+      padding: 170px 50px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      & > .forecasts_list {
+       margin-right: 50px;
+      }
+    }
+    .forecast_details {
+      background-color: #EEEEEE;
+      box-sizing: border-box;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      .details_title {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 50px;
+        background-color: #134F5C;
+        color: #FFFFFF;
+        font-family: "MontMedium", sans-serif;
+        font-size: 24px;
+      }
+      .details_wrapper {
+        padding: 14px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .details {
+          width: calc(60% - 16px);
+          height: 300px;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-evenly;
+          font-size: 20px;
+          .detail {
+            font-family: "MontMedium", sans-serif;
+            margin-right: 4px;
+          }
+          .condition {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          .due_date {
+            color: #FF0000;
+          }
+        }
+        .forecast_image {
+          max-height: 300px;
+          max-width: 40%;
+        }
+      }
+    }
+}

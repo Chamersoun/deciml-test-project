@@ -1,0 +1,53 @@
+{
+  "name": "deciml-test-project",
+  "version": "0.0.1",
+  "private": true,
+  "maintainers": [
+    {
+      "name": "Danylo Churilin",
+      "email": "danylo.churilin@giraffesoftware.com"
+    }
+  ],
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@date-io/moment": "^2.6.0",
+    "@emotion/core": "^10.0.27",
+    "@material-ui/core": "^4.9.10",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.2.10",
+    "clsx": "^1.1.0",
+    "date-fns": "^2.8.1",
+    "history": "^4.7.2",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.7.0",
+    "react-paginate": "^6.3.2",
+    "react-responsive": "^7.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "2.1.3",
+    "react-select": "^3.0.8",
+    "react-spinners": "^0.8.0",
+    "react-toastify": "^6.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && (mv builded old_build || true) && mv build builded && rm -rf old_build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/**/*{.jsx,.js}\" \"src/**/**/**/*{.jsx,.js}\" \"src/**/**/**/**/*{.jsx,.js}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

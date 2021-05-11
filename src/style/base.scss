@@ -1,0 +1,40 @@
+body{
+  overflow: auto;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  color: #393939;
+  font-family: "MontRegular",sans-serif;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 12px 64px;
+  background-color: #EEEEEE;
+  font-family: "MontSemiBold", sans-serif;
+  font-size: 32px;
+  width: 100%;
+}
+
+a, button{
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+}
+
+.card_hover {
+  cursor: pointer;
+  -webkit-transition: all ease .2s;
+  -moz-transition: all ease .2s;
+  -ms-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease .2s;
+  &:hover{
+    margin-top: -3px;
+    margin-bottom: 3px;
+  }
+}
