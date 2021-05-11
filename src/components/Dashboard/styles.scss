@@ -26,6 +26,11 @@
     transition: 0.2s linear all;
     cursor: pointer;
     user-select: none;
+    &.chosen_one {
+      .name_block {
+        background-color: #134F5C;
+      }
+    }
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -42,6 +47,7 @@
       color: #FFFFFF;
       padding: 14px 64px;
       line-height: 32px;
+      transition: 0.2s linear all;
     }
     .condition_block {
       font-size: 24px;

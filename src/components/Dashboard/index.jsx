@@ -71,6 +71,7 @@ class Dashboard extends Component {
     };
 
     render() {
+        const { chosenForecast } = this.state;
         return (
             <div className="dashboard_wrapper">
                 <h1 className="title">Current Forecasts:</h1>
@@ -80,7 +81,7 @@ class Dashboard extends Component {
                             const { id, title, condition } = forecast;
                             return (
                                 <div
-                                    className="forecast"
+                                    className={`forecast ${chosenForecast.id === id && "chosen_one"}`}
                                     key={`forecast_${id}`}
                                     onClick={() => this.handleForecastDetails(forecast)}
                                 >
